@@ -4,8 +4,18 @@ Deta SDK for Rust
 
 Example:
 
+`Cargo.toml`
+
+```toml
+[dependencies]
+deta = "0.3.0"
+serde = { version = "1.0.127", features = ["derive"] }
+```
+
+`main.rs`
+
 ```rust
-use base::Base;
+use deta::base::Base;
 use serde::Deserialize;
 
 #[derive(Debug, Deserialize)]
